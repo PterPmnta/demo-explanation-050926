@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Nómina - Panel Principal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="brand">
+        <h2>NominaSys</h2>
+      </div>
+      <nav class="menu">
+        <a href="#" class="active">Inicio</a>
+        <a href="#">Empleados</a>
+        <a href="#">Nóminas</a>
+        <a href="#">Reportes</a>
+        <a href="#">Configuración</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <h1>Resumen de Nómina</h1>
+        <div class="user-profile">
+          <span>Administrador</span>
+        </div>
+      </header>
+
+      <section class="metrics-grid">
+        <div class="card metric">
+          <h3>Total a Pagar</h3>
+          <p class="amount">$24,500,000</p>
+          <span class="period">Periodo Actual</span>
+        </div>
+        <div class="card metric">
+          <h3>Empleados Activos</h3>
+          <p class="amount">42</p>
+          <span class="status positive">100% procesados</span>
+        </div>
+        <div class="card metric">
+          <h3>Deducciones Totales</h3>
+          <p class="amount">$3,850,000</p>
+          <span class="period">Salud, Pensión, Otros</span>
+        </div>
+      </section>
+
+      <section class="card table-container">
+        <h2>Detalle del Periodo Activo</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Empleado</th>
+              <th>Cargo</th>
+              <th>Salario Base</th>
+              <th>Deducciones</th>
+              <th>Neto a Pagar</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ana Martínez</td>
+              <td>Desarrolladora Senior</td>
+              <td>$5,000,000</td>
+              <td>$800,000</td>
+              <td>$4,200,000</td>
+              <td><span class="badge success">Pagado</span></td>
+            </tr>
+            <tr>
+              <td>Carlos Gómez</td>
+              <td>Diseñador UX</td>
+              <td>$3,800,000</td>
+              <td>$608,000</td>
+              <td>$3,192,000</td>
+              <td><span class="badge success">Pagado</span></td>
+            </tr>
+            <tr>
+              <td>Luisa Fernández</td>
+              <td>Analista QA</td>
+              <td>$3,200,000</td>
+              <td>$512,000</td>
+              <td>$2,688,000</td>
+              <td><span class="badge pending">Pendiente</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
